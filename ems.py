@@ -48,6 +48,12 @@ while True:
         # pos=emp.index(oldid)
         # emp[pos]=newid
         # print("updation is :",emp) 
-
+    elif a==4:
+            d=str(input("Enter emp_id needed to be deleted : "))
+            if d in emp:
+                emp.remove(d)
+                print("Deleted : ",emp)
+            else:
+                print("Name not found")
 
 
