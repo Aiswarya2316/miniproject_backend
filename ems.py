@@ -44,16 +44,23 @@ while True:
                 i[6]=emp_phno
         if f==0:
             print("invalid id")
-        # newid=str(input("Enter the updation"))
-        # pos=emp.index(oldid)
-        # emp[pos]=newid
-        # print("updation is :",emp) 
     elif a==4:
-            d=str(input("Enter emp_id needed to be deleted : "))
-            if d in emp:
-                emp.remove(d)
-                print("Deleted : ",emp)
+            d=int(input("Enter ID needed to be deleted: "))
+            f=0
+            for i in range(len(emp)):
+                if d==emp[i][0]:  
+                    f=1
+                    del emp[i]       
+                    break               
+
+            if f==0:
+                print("ID not found")
             else:
-                print("Name not found")
+                print("Updated worker list:",emp)
 
-
+    elif a==5:
+            print("You had exited")
+            break
+            
+    else:
+        print("INVALID INPUT !")    
