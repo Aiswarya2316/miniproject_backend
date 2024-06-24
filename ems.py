@@ -56,11 +56,11 @@ while True:
             if f==0:
                 print("ID not found")
             else:
-                print("Updated worker list:",emp)
+                print("Updated employee list:",emp)
 
     elif a==5:
-            print("You had exited")
+            print("You are exited")
             break
             
     else:
-        print("INVALID INPUT !")    
+        print("INVALID -----!")    
