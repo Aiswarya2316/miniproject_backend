@@ -54,7 +54,7 @@ while True:
                     break               
 
             if f==0:
-                print("ID not found")
+                print("ID not recognised")
             else:
                 print("Updated employee list:",emp)
 
