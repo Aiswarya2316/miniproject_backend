@@ -47,10 +47,10 @@ while True:
     elif a==4:
             d=int(input("Enter ID needed to be deleted: "))
             f=0
-            for i in range(len(emp)):
-                if d==emp[i][0]:  
+            for i in emp:
+                if d==i[0]:  
                     f=1
-                    del emp[i]       
+                    emp.remove(i)   
                     break               
 
             if f==0:
